@@ -9,7 +9,7 @@ export default function Home() {
         <div className="text-center">
           <span>Data Scientist</span>
           <h2>
-            Hello I'm <br />
+            Hello I am <br />
             <span>Marwen KOUDHI</span>
           </h2>
           <p className="max-w-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis</p>
