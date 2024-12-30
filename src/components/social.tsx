@@ -16,8 +16,10 @@ const Social = () => {
   return (
     <div className="flex gap-5">
       {links.map((link, index) => (
-        <Link key={index} href={link.path} rel="noreferrer" className="text-accent hover:text-foreground">
-          {link.icon}
+        <Link legacyBehavior key={index} href={link.path} rel="noreferrer">
+          <a target="_blank" className="text-primary-foreground bg-primary p-2 rounded-full">
+            {link.icon}
+          </a>
         </Link>
       ))}
     </div>

@@ -2,13 +2,14 @@ import { DownloadIcon } from "lucide-react";
 
 import Social from "@/components/social";
 import { Button } from "@/components/ui/button";
+import Photo from "@/components/photo";
 
 export default function Home() {
   return (
     <div className="h-full mx-auto max-w-screen-lg px-4 xl:px-0">
       <div className="flex flex-col xl:flex-row items-center justify-between gap-8">
         {/* Left Section: Introduction */}
-        <div className="text-center xl:text-left space-y-6">
+        <div className="text-center xl:text-left order-2 xl:order-none space-y-6">
           <span className="text-lg font-semibold text-accent">Data Scientist</span>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             Hello, I am <br />
@@ -25,9 +26,10 @@ export default function Home() {
             <Social />
           </div>
         </div>
-
         {/* Right Section: Photo Placeholder */}
-        <img height={100} width={100} alt="me" src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
+        <div className="order-1 xl:order-none">
+          <Photo />
+        </div>
       </div>
     </div>
   );
