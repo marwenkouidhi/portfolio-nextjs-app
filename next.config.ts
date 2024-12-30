@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
+  assetPrefix: isProd ? "/portfolio-nextjs-app/" : "",
+  basePath: isProd ? "/portfolio-nextjs-app" : "",
+  output: "export",
   images: {
     unoptimized: true,
   },
-  assetPrefix: "/portfolio-nextjs-app/",
-  basePath: "/portfolio-nextjs-app",
-  output: "export",
 };
 
 export default nextConfig;

@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         {/* Right Section: Photo Placeholder */}
-        <img src="portfolio-nextjs-app/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
+        <img src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
       </div>
     </div>
   );
