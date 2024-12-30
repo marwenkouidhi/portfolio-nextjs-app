@@ -2,6 +2,7 @@ import { DownloadIcon } from "lucide-react";
 
 import Social from "@/components/social";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Right Section: Photo Placeholder */}
-        <img src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
+        <Image height={100} width={100} alt="me" src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
       </div>
     </div>
   );
