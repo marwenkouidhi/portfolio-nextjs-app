@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Right Section: Photo Placeholder */}
-        <Image height={100} width={100} alt="me" src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
+        <img height={100} width={100} alt="me" src="/me.jpg" className="w-64 h-64 rounded-3xl shadow-xl" />
       </div>
     </div>
   );
