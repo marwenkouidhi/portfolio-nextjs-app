@@ -2,10 +2,8 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, User, Phone, Mail, Flag, Languages, Calendar, MapPin } from "lucide-react";
-import Image from "next/image";
+import { Briefcase, GraduationCap, User, Phone, Mail, Flag, Languages, Calendar } from "lucide-react";
 
 const about = {
   title: "About Me",
