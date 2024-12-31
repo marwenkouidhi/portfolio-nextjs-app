@@ -102,9 +102,11 @@
   }
 
   body {
-    @apply bg-background font-primary   text-foreground  leading-loose;
+    @apply bg-background font-primary text-foreground  leading-loose;
   }
-
+  p {
+    @apply text-sm;
+  }
   h1 {
     @apply text-4xl font-bold leading-tight;
   }
@@ -127,5 +129,19 @@
 
   h6 {
     @apply text-base font-medium leading-snug;
+  }
+
+  .text-outline {
+    @apply text-transparent;
+    -webkit-text-stroke: 1px black;
+  }
+  .text-outline-dark {
+    @apply text-transparent;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .text-outline-hover {
+    @apply text-transparent;
+    -webkit-text-stroke: 1px hsl(156, 100%, 35%);
   }
 }
