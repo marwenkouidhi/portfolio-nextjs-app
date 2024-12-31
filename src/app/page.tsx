@@ -6,7 +6,7 @@ import Photo from "@/components/photo";
 
 export default function Home() {
   return (
-    <div className="h-full mx-auto max-w-screen-lg px-4 xl:px-0">
+    <section className="h-full mx-auto max-w-screen-lg px-4 xl:px-0">
       <div className="flex flex-col xl:flex-row items-center justify-between gap-8">
         {/* Left Section: Introduction */}
         <div className="text-center xl:text-left order-2 xl:order-none space-y-6">
@@ -31,6 +31,6 @@ export default function Home() {
           <Photo />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
