@@ -1,6 +1,5 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ContactInfoItemCard } from "./contact-info-item";
 import { SocialLinks } from "./contact-form-social-links";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";

@@ -1,6 +1,4 @@
-import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Send } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -24,11 +22,12 @@ const useContactForm = () => {
 
   const onSubmit = async (values: z.infer<typeof ContactFormSchema>) => {
     setIsSubmitting(true);
+    console.log(values);
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       toast("Thank you! Your message has been sent successfully");
       form.reset();
-    } catch (error) {
+    } catch {
       toast("There was a problem sending your message. Please try again.");
     } finally {
       setIsSubmitting(false);

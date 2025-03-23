@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import { Loader2 } from "lucide-react";
-import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 import { Button, type ButtonProps } from "@/components/ui/button";
 
@@ -13,10 +11,7 @@ export interface LoadingButtonProps extends ButtonProps {
 }
 
 const LoadingButton = React.forwardRef<HTMLButtonElement, LoadingButtonProps>(
-  (
-    { className, variant, size, isLoading = false, loadingText, children, disabled, ...props },
-    ref
-  ) => {
+  ({ className, variant, size, isLoading = false, loadingText, children, disabled, ...props }) => {
     return (
       <Button
         className={cn(isLoading && "cursor-not-allowed", className)}

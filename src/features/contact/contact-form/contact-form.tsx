@@ -6,7 +6,6 @@ import FormInput from "@/components/form-input";
 import { ContactFormConfig } from "./contact-form-config";
 import { LoadingButton } from "@/components/loading-button";
 import { Form } from "@/components/ui/form";
-import { Button } from "@/components/ui/button";
 
 export const ContactForm = () => {
   const { form, onSubmit, isSubmitting } = useContactForm();
@@ -14,9 +13,9 @@ export const ContactForm = () => {
   return (
     <Card className="col-span-2 border-none">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary">Let's Work Together</CardTitle>
+        <CardTitle className="text-2xl font-bold text-primary">{`Let's Work Together`}</CardTitle>
         <CardDescription className="text-foreground">
-          Have a project in mind? Let's discuss how I can help bring your ideas to life.
+          {`Have a project in mind? Let's discuss how I can help bring your ideas to life.`}
         </CardDescription>
       </CardHeader>
 
