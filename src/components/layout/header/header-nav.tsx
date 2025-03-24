@@ -1,34 +1,37 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
 
 const links = [
   {
     label: "services",
-    path: "#services",
+    anchor: "#services",
   },
   {
     label: "resume",
-    path: "#resume",
+    anchor: "#resume",
   },
   {
     label: "work",
-    path: "#work",
+    anchor: "#work",
   },
 ];
 
 const HeaderNav = () => {
+  const scrollToAnchor = useScrollToAnchor();
+
   return (
-    <nav className="flex gap-5 text-sm">
+    <nav className="flex flex-col gap-5 items-center xl:flex-row xl:text-sm">
       {links.map((link, index) => (
-        <Link
+        <span
           key={index}
-          href={link.path}
-          className={cn("capitalize hover:underline font-medium transition-colors duration-200")}
+          className={
+            "capitalize hover:underline font-medium transition-colors duration-200 cursor-pointer"
+          }
+          onClick={() => scrollToAnchor(link.anchor)}
         >
           {link.label}
-        </Link>
+        </span>
       ))}
     </nav>
   );

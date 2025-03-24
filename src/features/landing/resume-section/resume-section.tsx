@@ -9,7 +9,7 @@ import { aboutData, educationData, experienceData } from "./resume-section-confi
 
 const ResumeSection = () => {
   return (
-    <section className="h-full mx-auto max-w-screen-lg px-4 xl:px-0">
+    <section id="resume" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
       <Tabs defaultValue="about">
         <TabsList>
           <TabsTrigger value="about" className="flex items-center justify-center space-x-2">

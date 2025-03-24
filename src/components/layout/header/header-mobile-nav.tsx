@@ -4,23 +4,27 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import Link from "next/link";
 import { AlignRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
+import HeaderNav from "./header-nav";
 
 const links = [
   {
     label: "services",
-    path: "#services",
+    anchor: "#services",
   },
   {
     label: "resume",
-    path: "#resume",
+    anchor: "#resume",
   },
   {
     label: "work",
-    path: "#work",
+    anchor: "#work",
   },
 ];
 
 const MobileNav = () => {
+  const scrollToAnchor = useScrollToAnchor();
+
   return (
     <div className="xl:hidden">
       <Sheet>
@@ -33,19 +37,7 @@ const MobileNav = () => {
           <Link href="/">
             <h1>Marwen.</h1>
           </Link>
-          <nav className="flex flex-col items-center gap-5">
-            {links.map((link, index) => (
-              <Link
-                key={index}
-                href={link.path}
-                className={cn(
-                  "capitalize hover:underline font-medium transition-colors duration-200"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          <HeaderNav />
         </SheetContent>
       </Sheet>
     </div>
