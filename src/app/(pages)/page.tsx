@@ -1,6 +1,7 @@
-import HeroSection from "@/features/landing/hero-section";
+import HeroSection from "@/features/landing/hero-section/hero-section";
 import ResumeSection from "@/features/landing/resume-section/resume-section";
-import ServicesSection from "@/features/landing/services-section";
+import ServicesSection from "@/features/landing/services-section/services-section";
+import WorkSection from "@/features/landing/work-section/work-section";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ResumeSection />
+      <WorkSection />
     </main>
   );
 }

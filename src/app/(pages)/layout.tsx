@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/layout/header/header";
 import "../globals.css";
+import Footer from "@/components/layout/footer/footer";
 
 const geistSans = Fira_Sans({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
           <Toaster />
         </ThemeProvider>
       </body>
