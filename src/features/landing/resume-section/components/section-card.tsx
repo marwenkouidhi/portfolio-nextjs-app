@@ -12,7 +12,7 @@ export function SectionCard({ title, description, children }: SectionCardProps) 
     <Card className="border-none">
       <CardHeader>
         <CardTitle className="text-3xl font-bold text-primary">{title}</CardTitle>
-        <CardDescription className="text-sm text-secondary-foreground">
+        <CardDescription className="text-lg text-secondary-foreground">
           {description}
         </CardDescription>
       </CardHeader>

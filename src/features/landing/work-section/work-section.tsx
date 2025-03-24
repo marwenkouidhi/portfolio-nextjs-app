@@ -7,13 +7,28 @@ import useWorkSection from "./use-work-section";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import {
+  Section,
+  SectionContent,
+  SectionHeader,
+  SectionHeading,
+  SectionSubtitle,
+  SectionTopline,
+} from "../landing-section";
 
 const WorkSection = () => {
   const { project, handleNext, handlePrev } = useWorkSection();
   const { num, title, description, img, tags, link, github } = project;
+
   return (
-    <section id="work" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0 ">
-      <div className="grid grid-cols-2 gap-10">
+    <Section id="work" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0 ">
+      <SectionHeader>
+        <SectionTopline>Work</SectionTopline>
+        <SectionHeading>Featured Projects</SectionHeading>
+        <SectionSubtitle>Selected work that demonstrates my skills</SectionSubtitle>
+      </SectionHeader>
+
+      <SectionContent className="grid grid-cols-2 gap-10">
         <div className="space-y-8">
           <div className="space-y-3">
             <h1 className="text-6xl font-extrabold">{num}</h1>
@@ -48,8 +63,8 @@ const WorkSection = () => {
             </Button>
           </div>
         </div>
-      </div>
-    </section>
+      </SectionContent>
+    </Section>
   );
 };
 

@@ -1,6 +1,14 @@
 import { ArrowDownRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import {
+  Section,
+  SectionContent,
+  SectionHeader,
+  SectionHeading,
+  SectionSubtitle,
+  SectionTopline,
+} from "../landing-section";
 
 const services = [
   {
@@ -35,8 +43,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0  ">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+    <Section id="services" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
+      <SectionHeader>
+        <SectionTopline>Services</SectionTopline>
+        <SectionHeading>What I Offer</SectionHeading>
+        <SectionSubtitle>Solutions tailored to your business needs</SectionSubtitle>
+      </SectionHeader>
+
+      <SectionContent className="grid grid-cols-1 xl:grid-cols-2 gap-10">
         {services.map((service, _) => (
           <div key={_} className="group space-y-5">
             <div className="flex justify-between items-center">
@@ -53,8 +67,8 @@ const Services = () => {
             <div className="border-b" />
           </div>
         ))}
-      </div>
-    </section>
+      </SectionContent>
+    </Section>
   );
 };
 
