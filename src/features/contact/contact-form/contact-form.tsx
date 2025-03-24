@@ -11,7 +11,7 @@ export const ContactForm = () => {
   const { form, onSubmit, isSubmitting } = useContactForm();
 
   return (
-    <Card className="col-span-2 border-none">
+    <Card className="border-none">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-primary">{`Let's Work Together`}</CardTitle>
         <CardDescription className="text-foreground">

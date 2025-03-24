@@ -47,7 +47,7 @@ export const contactInfoData = {
 
 export function ContactInfo() {
   return (
-    <section className="flex flex-col space-y-5">
+    <section className=" flex flex-col space-y-5">
       <div className="flex flex-col space-y-5">
         {contactInfoData.items.map((item, _) => (
           <ContactInfoItemCard key={_} item={item} />

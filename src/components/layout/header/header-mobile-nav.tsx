@@ -2,24 +2,25 @@
 import React from "react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { AlignRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
   {
-    label: "home",
-    path: "/",
+    label: "services",
+    path: "#services",
   },
   {
-    label: "projects",
-    path: "/work",
+    label: "resume",
+    path: "#resume",
+  },
+  {
+    label: "work",
+    path: "#work",
   },
 ];
 
 const MobileNav = () => {
-  const pathname = usePathname();
-
   return (
     <div className="xl:hidden">
       <Sheet>
@@ -38,8 +39,7 @@ const MobileNav = () => {
                 key={index}
                 href={link.path}
                 className={cn(
-                  "capitalize hover:underline font-medium transition-colors duration-200",
-                  pathname === link.path && "underline"
+                  "capitalize hover:underline font-medium transition-colors duration-200"
                 )}
               >
                 {link.label}
