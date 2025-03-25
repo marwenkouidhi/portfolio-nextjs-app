@@ -48,6 +48,6 @@ export const ContactFormConfig = {
     placeholder: "Your message",
     type: InputTypes.TEXTAREA,
     defaultValue: "this is test message",
-    className: "col-span-full rows-6",
+    className: "col-span-full",
   },
 };

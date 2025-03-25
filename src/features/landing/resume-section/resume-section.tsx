@@ -17,7 +17,7 @@ import {
 
 const ResumeSection = () => {
   return (
-    <Section id="resume" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
+    <Section id="resume" className="snap-start h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
       <SectionHeader>
         <SectionTopline>Resume</SectionTopline>
         <SectionHeading>Professional Resume</SectionHeading>

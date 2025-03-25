@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Section id="services" className="h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
+    <Section id="services" className="snap-start h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
       <SectionHeader>
         <SectionTopline>Services</SectionTopline>
         <SectionHeading>What I Offer</SectionHeading>

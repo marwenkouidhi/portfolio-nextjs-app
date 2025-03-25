@@ -5,7 +5,7 @@ import WorkSection from "@/features/landing/work-section/work-section";
 
 export default function Home() {
   return (
-    <main className="space-y-24">
+    <main className="scrollbar-hide space-y-24 h-[calc(100vh-8rem)] snap-y snap-mandatory overflow-y-scroll">
       <HeroSection />
       <ServicesSection />
       <ResumeSection />
