@@ -2,6 +2,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 interface SectionContextValue {
   align?: "left" | "center" | "right";
@@ -50,18 +51,16 @@ export function SectionHeader({ className, children, ...props }: SectionHeaderPr
   );
 }
 
-interface SectionToplineProps extends React.HTMLAttributes<HTMLParagraphElement> {
+interface SectionToplineProps extends React.ComponentPropsWithoutRef<typeof Badge> {
+  className?: string;
   children: React.ReactNode;
 }
 
 export function SectionTopline({ className, children, ...props }: SectionToplineProps) {
   return (
-    <p
-      className={cn("text-sm font-semibold uppercase tracking-widest text-primary", className)}
-      {...props}
-    >
+    <Badge className={cn("text-sm font-semibold uppercase tracking-widest", className)} {...props}>
       {children}
-    </p>
+    </Badge>
   );
 }
 
@@ -86,7 +85,10 @@ interface SectionSubtitleProps extends React.HTMLAttributes<HTMLParagraphElement
 
 export function SectionSubtitle({ className, children, ...props }: SectionSubtitleProps) {
   return (
-    <p className={cn("text-muted-foreground text-lg md:text-xl", className)} {...props}>
+    <p
+      className={cn("text-muted-foreground text-sm xl:text-lg tracking-tighter", className)}
+      {...props}
+    >
       {children}
     </p>
   );

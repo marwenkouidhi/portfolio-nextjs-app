@@ -18,7 +18,7 @@ const Header = () => {
         <HeaderNav />
 
         <Button asChild>
-          <Link href="/contact">Hire me</Link>
+          <Link href="#contact">Hire me</Link>
         </Button>
         <ModeToggle />
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { SocialLink } from "../hire-me-types";
+import { SocialLink } from "../../contact-types";
 
 interface SocialLinksProps {
   links: SocialLink[];

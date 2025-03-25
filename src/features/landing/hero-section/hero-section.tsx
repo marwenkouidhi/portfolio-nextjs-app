@@ -18,7 +18,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="snap-start h-[calc(100vh-8rem)]  flex items-center mx-auto max-w-screen-lg px-4 xl:px-0">
+    <section className="lg:snap-start lg:h-[calc(100vh-8rem)]  flex items-center mx-auto max-w-screen-lg px-4 xl:px-0">
       <div className="flex flex-wrap justify-center items-start gap-5">
         <Image
           height={200}

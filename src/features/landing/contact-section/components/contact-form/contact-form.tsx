@@ -12,13 +12,6 @@ export const ContactForm = () => {
 
   return (
     <Card className="border-none">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary">{`Let's Work Together`}</CardTitle>
-        <CardDescription className="text-foreground">
-          {`Have a project in mind? Let's discuss how I can help bring your ideas to life.`}
-        </CardDescription>
-      </CardHeader>
-
       <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-5 grid-cols-2">

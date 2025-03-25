@@ -9,49 +9,22 @@ import {
   SectionSubtitle,
   SectionTopline,
 } from "../landing-section";
-
-const services = [
-  {
-    num: "01",
-    title: "Data Science",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "Data Engineering",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Web development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "Automation",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
-  },
-];
+import { servicesData } from "./services-section-config";
 
 const Services = () => {
   return (
-    <Section id="services" className="snap-start h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
+    <Section
+      id="services"
+      className="lg:snap-start lg:h-screen mx-auto max-w-screen-lg px-4 xl:px-0"
+    >
       <SectionHeader>
-        <SectionTopline>Services</SectionTopline>
+        <SectionTopline variant="secondary">Services</SectionTopline>
         <SectionHeading>What I Offer</SectionHeading>
         <SectionSubtitle>Solutions tailored to your business needs</SectionSubtitle>
       </SectionHeader>
 
       <SectionContent className="grid grid-cols-1 xl:grid-cols-2 gap-10">
-        {services.map((service, _) => (
+        {servicesData.map((service, _) => (
           <div key={_} className="group space-y-5">
             <div className="flex justify-between items-center">
               <h1 className="text-6xl font-extrabold">{service.num}</h1>
