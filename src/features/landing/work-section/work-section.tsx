@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import useWorkSection from "./use-work-section";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
 import {
   Section,
   SectionContent,
