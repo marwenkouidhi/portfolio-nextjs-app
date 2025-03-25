@@ -26,7 +26,10 @@ const WorkSection = () => {
   const { num, title, description, img, tags, link, github } = project;
 
   return (
-    <Section id="work" className="lg:snap-start lg:h-screen mx-auto max-w-screen-lg px-4 xl:px-0 ">
+    <Section
+      id="work"
+      className="snap-start min-h-[calc(100vh-5rem)] mx-auto max-w-screen-lg px-4 xl:px-0 "
+    >
       <SectionHeader>
         <SectionTopline variant="secondary">Work</SectionTopline>
         <SectionHeading>Featured Projects</SectionHeading>

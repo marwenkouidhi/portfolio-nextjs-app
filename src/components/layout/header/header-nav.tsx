@@ -1,5 +1,6 @@
 "use client";
 
+import { SheetClose } from "@/components/ui/sheet";
 import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
 
 const links = [
@@ -19,20 +20,24 @@ const links = [
 
 const HeaderNav = () => {
   const scrollToAnchor = useScrollToAnchor();
+  const handleClick = (anchor: string) => {
+    scrollToAnchor(anchor, {
+      containerId: "landing-container",
+    });
+  };
 
   return (
-    <nav className="flex flex-col gap-5 items-center xl:flex-row xl:text-sm">
-      {links.map((link, index) => (
+    <nav className="hidden xl:flex gap-5 items-center  xl:text-sm">
+      {links.map((link, _) => (
         <span
-          key={index}
+          key={_}
           className={
             "capitalize hover:underline font-medium transition-colors duration-200 cursor-pointer"
           }
-          onClick={() =>
-            scrollToAnchor(link.anchor, {
-              containerId: "landing-container",
-            })
-          }
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick(link.anchor);
+          }}
         >
           {link.label}
         </span>
