@@ -28,7 +28,11 @@ const HeaderNav = () => {
           className={
             "capitalize hover:underline font-medium transition-colors duration-200 cursor-pointer"
           }
-          onClick={() => scrollToAnchor(link.anchor)}
+          onClick={() =>
+            scrollToAnchor(link.anchor, {
+              containerId: "landing-container",
+            })
+          }
         >
           {link.label}
         </span>
