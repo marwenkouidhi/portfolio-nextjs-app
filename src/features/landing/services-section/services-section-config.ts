@@ -1,30 +1,30 @@
 export const servicesData = [
   {
     num: "01",
-    title: "Data Science",
+    title: "AI & Data Science Solutions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
+      "Build machine learning models for fraud detection, risk prediction, and NLP tasks (text classification, data extraction) using Python, TensorFlow, and PyTorch.",
+    href: "#ai-ml",
   },
   {
     num: "02",
-    title: "Data Engineering",
+    title: "Full-Stack Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
+      "Develop and deploy web apps with Django (backend), React/Next.js (frontend), and REST APIs. Experience in e-commerce integrations and dashboard development.",
+    href: "#web-dev",
   },
   {
     num: "03",
-    title: "Web development",
+    title: "MLOps & Cloud Deployment",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
+      "Containerize ML models with Docker, automate workflows with ZenML, and set up monitoring with Grafana for scalable production deployments.",
+    href: "#mlops",
   },
   {
     num: "04",
-    title: "Automation",
+    title: "Data Engineering & Automation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut volutpat facilisis.",
-    href: "",
+      "Design ETL pipelines, process large datasets with Spark, and build data visualization tools for actionable insights.",
+    href: "#data-engineering",
   },
 ];

@@ -85,10 +85,7 @@ interface SectionSubtitleProps extends React.HTMLAttributes<HTMLParagraphElement
 
 export function SectionSubtitle({ className, children, ...props }: SectionSubtitleProps) {
   return (
-    <p
-      className={cn("text-muted-foreground text-sm xl:text-lg tracking-tighter", className)}
-      {...props}
-    >
+    <p className={cn("text-muted-foreground text-sm tracking-tighter", className)} {...props}>
       {children}
     </p>
   );

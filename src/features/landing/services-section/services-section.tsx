@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <Section
       id="services"
-      className="lg:snap-start lg:h-screen mx-auto max-w-screen-lg px-4 xl:px-0"
+      className="lg:snap-start lg:min-h-screen mx-auto max-w-screen-lg px-4 xl:px-0"
     >
       <SectionHeader>
         <SectionTopline variant="secondary">Services</SectionTopline>

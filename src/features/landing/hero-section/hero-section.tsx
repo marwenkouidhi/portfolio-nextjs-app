@@ -36,15 +36,22 @@ const HeroSection = () => {
               <span className="">Marwen KOUDHI</span>
             </h2>
             <p className="max-w-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum massa ut
-              volutpat facilisis.
+              Recent Software Engineering Graduate with a strong foundation in technology and data
+              science. Eager to contribute to innovative projects in this ever- evolving field.{" "}
             </p>
 
             <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-start gap-4">
               {/* Download CV Button */}
-              <Button className="flex items-center gap-3 px-6 py-3">
-                <span>Download CV</span>
-                <DownloadIcon />
+              <Button asChild>
+                <div className="flex items-center gap-3 px-6 py-3">
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1tDYBzEl5W6Ft6x_MsOgs0SmwqxkhAQvx/view?usp=sharing"
+                  >
+                    Download CV
+                  </a>
+                  <DownloadIcon />
+                </div>
               </Button>
 
               {/* Social Links */}

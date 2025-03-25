@@ -1,6 +1,12 @@
 "use client";
 
-import { ArrowDownRightIcon, ArrowLeft, ArrowRight, GithubIcon } from "lucide-react";
+import {
+  ArrowDownRightIcon,
+  ArrowLeft,
+  ArrowRight,
+  ExternalLinkIcon,
+  GithubIcon,
+} from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import useWorkSection from "./use-work-section";
@@ -35,26 +41,52 @@ const WorkSection = () => {
             <h2>{title}</h2>
             <p className="text-sm">{description}</p>
           </div>
-          <div className="flex space-x-5 text-xs">
-            {tags.map((tag, _) => (
-              <Badge key={_} variant="secondary">
-                {tag}
+          <div className="flex gap-3 text-xs flex-wrap">
+            {tags.map((tag, index) => (
+              <Badge key={index} variant="secondary">
+                {tag.url ? (
+                  <a
+                    href={tag.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-1"
+                  >
+                    <ExternalLinkIcon className="h-4 w-4" />
+                    <span>{tag.name}</span>
+                  </a>
+                ) : (
+                  tag.name
+                )}
               </Badge>
             ))}
           </div>
           <Separator />
           <div className="flex space-x-5">
-            <Link href={link} className="bg-muted p-4 rounded-full transition-all duration-700">
+            <a
+              target="_blank"
+              href={link}
+              className="bg-muted p-4 rounded-full transition-all duration-700"
+            >
               <ArrowDownRightIcon />
-            </Link>
-            <Link href={github} className="bg-muted p-4 rounded-full transition-all duration-700">
+            </a>
+            <a
+              target="_blank"
+              href={github}
+              className="bg-muted p-4 rounded-full transition-all duration-700"
+            >
               <GithubIcon />
-            </Link>
+            </a>
           </div>
         </div>
         <div className="grid gap-3">
-          <Image src={img} alt={title} height={500} width={500} />
-          <div className="flex space-x-3 justify-self-end">
+          <Image
+            src={img}
+            alt={title}
+            height={500}
+            width={500}
+            className="object-cover rounded-lg"
+          />
+          <div className="flex space-x-3 self-start justify-self-end">
             <Button size="icon" className="cursor-pointer" onClick={handlePrev}>
               <ArrowLeft />
             </Button>

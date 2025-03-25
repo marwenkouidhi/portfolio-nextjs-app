@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import useContactForm from "./use-contact-form";
 import FormInput from "@/components/form-input";
 import { ContactFormConfig } from "./contact-form-config";
