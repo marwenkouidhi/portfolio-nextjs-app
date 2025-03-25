@@ -3,8 +3,9 @@ import { Fira_Sans, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/layout/header/header";
-import "../globals.css";
 import Footer from "@/components/layout/footer/footer";
+import { Analytics } from "@vercel/analytics/react";
+import "../globals.css";
 
 const geistSans = Fira_Sans({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Toaster />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
