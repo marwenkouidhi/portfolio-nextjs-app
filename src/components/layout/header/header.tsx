@@ -3,7 +3,6 @@
 import React from "react";
 import HeaderNav from "./header-nav";
 import Link from "next/link";
-import MobileNav from "./header-mobile-nav";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
@@ -12,12 +11,22 @@ const Header = () => {
   const scrollToAnchor = useScrollToAnchor();
 
   return (
-    <header className="xl:py-12 px-8 xl:px-0 max-w-screen-lg mx-auto flex items-center justify-between h-32">
-      <Link href="/">
-        <h1 className="text-3xl">Marwen.</h1>
-      </Link>
+    <header
+      id="header"
+      className="px-8 xl:px-0 max-w-screen-lg mx-auto flex items-center justify-between h-[5rem]"
+    >
+      <h1
+        onClick={() =>
+          scrollToAnchor("#hero-section", {
+            containerId: "landing-container",
+          })
+        }
+        className="cursor-pointer text-3xl"
+      >
+        Marwen.
+      </h1>
 
-      <div className="hidden xl:flex items-center gap-5">
+      <div className="flex items-center gap-5">
         <HeaderNav />
 
         <Button
@@ -32,8 +41,6 @@ const Header = () => {
         </Button>
         <ModeToggle />
       </div>
-
-      <MobileNav />
     </header>
   );
 };
