@@ -85,7 +85,7 @@ export const useScrollToAnchor = () => {
 
   const scrollToAnchor = useCallback(
     (target: string, options: UseScrollToAnchorOptions = {}) => {
-      const { behavior = "smooth", offset = 0, scrollOnSamePage = true, containerId } = options;
+      const { scrollOnSamePage = true } = options;
 
       try {
         // Parse the target URL
@@ -109,7 +109,7 @@ export const useScrollToAnchor = () => {
           // Scroll on the same page
           scrollToElement(anchorId, options);
         }
-      } catch (error) {
+      } catch {
         // Fallback for relative or invalid URLs
         scrollToElement(target, options);
       }

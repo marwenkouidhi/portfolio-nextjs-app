@@ -18,9 +18,9 @@ const ContactSection = () => {
     >
       <SectionHeader>
         <SectionTopline variant="secondary">Contact</SectionTopline>
-        <SectionHeading>Let's Work Together</SectionHeading>
+        <SectionHeading>{`Let's Work Together`}</SectionHeading>
         <SectionSubtitle>
-          Have a project in mind? Let's discuss how I can help bring your ideas to life.
+          {`Have a project in mind? Let's discuss how I can help bring your ideas to life.`}
         </SectionSubtitle>
       </SectionHeader>
 
