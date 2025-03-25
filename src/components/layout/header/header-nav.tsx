@@ -1,6 +1,5 @@
 "use client";
 
-import { SheetClose } from "@/components/ui/sheet";
 import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
 
 const links = [

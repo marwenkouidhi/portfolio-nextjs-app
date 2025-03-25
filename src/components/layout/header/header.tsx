@@ -2,7 +2,6 @@
 
 import React from "react";
 import HeaderNav from "./header-nav";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
