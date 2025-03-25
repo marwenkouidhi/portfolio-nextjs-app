@@ -26,20 +26,25 @@ const ResumeSection = () => {
 
       <SectionContent>
         <Tabs defaultValue="about">
-          <TabsList>
-            <TabsTrigger value="about" className="flex items-center justify-center space-x-2">
-              <User className="h-5 w-5" />
-              <span>{aboutData.title}</span>
-            </TabsTrigger>
-            <TabsTrigger value="experience" className="flex items-center justify-center space-x-2">
-              <Briefcase className="h-5 w-5" />
-              <span>{experienceData.title}</span>
-            </TabsTrigger>
-            <TabsTrigger value="education" className="flex items-center justify-center space-x-2">
-              <GraduationCap className="h-5 w-5" />
-              <span>{educationData.title}</span>
-            </TabsTrigger>
-          </TabsList>
+          <div className="overflow-x-auto">
+            <TabsList>
+              <TabsTrigger value="about" className="flex items-center justify-center space-x-2">
+                <User className="h-5 w-5" />
+                <span>{aboutData.title}</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="experience"
+                className="flex items-center justify-center space-x-2"
+              >
+                <Briefcase className="h-5 w-5" />
+                <span>{experienceData.title}</span>
+              </TabsTrigger>
+              <TabsTrigger value="education" className="flex items-center justify-center space-x-2">
+                <GraduationCap className="h-5 w-5" />
+                <span>{educationData.title}</span>
+              </TabsTrigger>
+            </TabsList>
+          </div>
 
           <TabsContent value="about">
             <AboutSection data={aboutData} />

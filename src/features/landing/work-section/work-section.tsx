@@ -28,7 +28,7 @@ const WorkSection = () => {
         <SectionSubtitle>Selected work that demonstrates my skills</SectionSubtitle>
       </SectionHeader>
 
-      <SectionContent className="grid grid-cols-2 gap-10">
+      <SectionContent className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="space-y-8">
           <div className="space-y-3">
             <h1 className="text-6xl font-extrabold">{num}</h1>
