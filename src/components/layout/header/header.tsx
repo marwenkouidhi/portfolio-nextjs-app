@@ -9,7 +9,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 px-8 xl:px-0 max-w-screen-lg mx-auto flex items-center justify-between">
+    <header className="xl:py-12 px-8 xl:px-0 max-w-screen-lg mx-auto flex items-center justify-between h-32">
       <Link href="/">
         <h1 className="text-3xl">Marwen.</h1>
       </Link>
@@ -18,7 +18,7 @@ const Header = () => {
         <HeaderNav />
 
         <Button asChild>
-          <Link href="/contact">Hire me</Link>
+          <Link href="#contact">Hire me</Link>
         </Button>
         <ModeToggle />
       </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ContactInfoItem } from "../hire-me-types";
+import type { ContactInfoItem } from "../../contact-types";
 
 interface ContactInfoItemProps {
   item: ContactInfoItem;

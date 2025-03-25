@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import useContactForm from "./use-contact-form";
 import FormInput from "@/components/form-input";
 import { ContactFormConfig } from "./contact-form-config";
@@ -12,13 +12,6 @@ export const ContactForm = () => {
 
   return (
     <Card className="border-none">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary">{`Let's Work Together`}</CardTitle>
-        <CardDescription className="text-foreground">
-          {`Have a project in mind? Let's discuss how I can help bring your ideas to life.`}
-        </CardDescription>
-      </CardHeader>
-
       <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-5 grid-cols-2">

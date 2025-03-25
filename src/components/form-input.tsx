@@ -51,7 +51,7 @@ const FormInput = ({
         <FormLabel>{label}</FormLabel>
         {description && <FormDescription>{description}</FormDescription>}
         <FormControl>
-          <Textarea {...field} id={name} rows={10} placeholder={placeholder} />
+          <Textarea className="h-44" {...field} id={name} rows={10} placeholder={placeholder} />
         </FormControl>
         <FormMessage />
       </FormItem>
