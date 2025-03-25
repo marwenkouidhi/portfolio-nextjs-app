@@ -17,7 +17,10 @@ import {
 
 const ResumeSection = () => {
   return (
-    <Section id="resume" className="lg:snap-start lg:h-screen mx-auto max-w-screen-lg px-4 xl:px-0">
+    <Section
+      id="resume"
+      className="snap-start min-h-[calc(100vh-5rem)] mx-auto max-w-screen-lg px-4 xl:px-0"
+    >
       <SectionHeader>
         <SectionTopline variant="secondary">Resume</SectionTopline>
         <SectionHeading>Professional Resume</SectionHeading>
