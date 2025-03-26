@@ -20,7 +20,7 @@ const Header = () => {
             containerId: "landing-container",
           })
         }
-        className="cursor-pointer text-3xl"
+        className="cursor-pointer text-4xl font-bold tracking-tighter"
       >
         Marwen.
       </h1>
